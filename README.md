@@ -1,8 +1,16 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+Este es un nuevo proyecto de [**React Native**](https://reactnative.dev), generado usando [`@react-native-community/cli`](https://github.com/react-native-community/cli). Hemos añadido algunas integraciones muy útiles en el mundo real.
+
+# Integraciones y documentación:
+
+- [React Native](https://reactnative.dev) - documentación oficial de React Native.
+- [React Native Firebase](https://rnfirebase.io) - documentación oficial de Firebase para React Native.
+- [TanStack Query](https://tanstack.com/query/latest/docs/react/react-native) - documentación oficial de TanStack Query (antes conocodo como React Query).
+- [Zustand](https://github.com/pmndrs/zustand) - documentación oficial de Zustand.
+
 
 # Getting Started
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+>**Nota**: Asefurate de completar la configuración del entorno de desarrollo disponible en [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) antes de seguir.
 
 ## Step 1: Start the Metro Server
 
