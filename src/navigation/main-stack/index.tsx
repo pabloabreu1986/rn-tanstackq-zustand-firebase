@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react'
 import { createStackNavigator } from '@react-navigation/stack'
 
 // Configs
@@ -11,14 +10,17 @@ import OnboardingStack from '../onboarding-stack'
 // Types
 import { MainStackParamsList } from '../types'
 
+// State
+import { useUserStore } from '../../state/user/user-store'
+
 const Stack = createStackNavigator<MainStackParamsList>()
 
 const MainNavigationStack = () => {
-  const [isLoggedIn, setIsLoggedIn] = useState(false)
+  const userIsLogged = useUserStore(state => state.loggedIn)
 
   return (
     <Stack.Navigator {...mainStackConfigs}>
-      {isLoggedIn ? (
+      {userIsLogged ? (
         <Stack.Screen name="AuthStack" component={AuthStack} />
       ) : (
         <Stack.Screen name="OnboardingStack" component={OnboardingStack} />
